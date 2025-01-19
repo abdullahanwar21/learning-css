@@ -1,0 +1,45 @@
+/* Universal Selector */
+/*  universal selectors is the selector 
+that applies to all the properties */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selector */
+/* Element Selector are the Selectors that 
+name of tag eg:- nav,header,div,span etc  */
+
+nav {
+  background: royalblue;
+  color: antiquewhite;
+}
+
+/* Class Selector */
+/* Class Selectors are the selector that 
+select specific class of the elements to be styled */
+
+.iam-class {
+  background-color: aqua;
+  font-size: larger;
+  /* display: inline; */
+}
+
+/* Id Selector */
+/* Id Selector are the selector mostly unique 
+that just apply for special one */
+
+#iam-id {
+  background-color: rebeccapurple;
+  font-size: larger;
+  color: aliceblue;
+}
+
+/* Direct Child Selector */
+/* Direct Child Selector means 
+that elements must be Direct child of parents eg:- div > p  */
+
+div > p {
+  background-color: rgb(114, 248, 18);
+  font-size: larger;
+}
