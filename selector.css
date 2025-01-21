@@ -1,45 +1,65 @@
-/* Universal Selector */
-/*  universal selectors is the selector 
-that applies to all the properties */
 * {
-  margin: 0;
-  padding: 0;
+  /* padding: 0; */
+  /* margin: 0; */
+  /* box-sizing: border-box; */
 }
 
-/* Element Selector */
-/* Element Selector are the Selectors that 
-name of tag eg:- nav,header,div,span etc  */
-
-nav {
-  background: royalblue;
-  color: antiquewhite;
-}
-
-/* Class Selector */
-/* Class Selectors are the selector that 
-select specific class of the elements to be styled */
-
-.iam-class {
-  background-color: aqua;
+/* Type Selector */
+/* Its Select All the paragraphs in html */
+p {
   font-size: larger;
-  /* display: inline; */
+  color: royalblue;
+}
+/* Class Selector */
+/* Its Selector Specific class w define it here */
+.iam-class {
+  background: aqua;
+  color: black;
 }
 
 /* Id Selector */
-/* Id Selector are the selector mostly unique 
-that just apply for special one */
-
+/* Its Selects Specific id we define it here */
 #iam-id {
-  background-color: rebeccapurple;
-  font-size: larger;
-  color: aliceblue;
+  background: hotpink;
+  color: black;
 }
 
-/* Direct Child Selector */
-/* Direct Child Selector means 
-that elements must be Direct child of parents eg:- div > p  */
+/* Groups Selector */
+/* Its Select all the element at one place 
+and apply same properties tht we select to b applied */
 
-div > p {
-  background-color: rgb(114, 248, 18);
-  font-size: larger;
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+}
+
+/* ==================== Descendant Selector ===================== */
+
+/* Descendant Selector */
+/* Targets descendants of an element */
+li h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Child Selector */
+/* Targets direct children of an element */
+
+ol > li {
+  background-color: aliceblue;
+  list-style-type: decimal-leading-zero;
+}
+
+/* ==================== Pseudo Classes ===================== */
+
+.hover-me:hover {
+  background-color: black;
+  transition: ease-in 0.3s;
+  color: white;
+}
+
+/* First-Child */
+
+li:nth-child(1) {
+  background-color: rgb(192, 184, 184);
 }
